@@ -275,7 +275,6 @@ section{
     height: 400px;
     margin: 5px;
     background: var(--secondary-color);
-    backdrop-filter:blur(4px);
     overflow:hidden;
     display: flex;
     flex-direction: column;
