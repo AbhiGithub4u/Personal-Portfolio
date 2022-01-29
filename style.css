@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out 0.2s;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color :#edf2fc;
+    --secondary-color :#212121;
+    
+}
+.dark-theme{
+    --primary-color :#2f2f2f;
+    --secondary-color :#fff;
+
+
+}
+body{
+    background: var(--primary-color);
+    color: black;
+}
+.head{
+    position: relative;
+    width: 100%;
+    padding: 8px 0px;
+    background: transparent;
+    font-family: sans-serif;
+
+}
+.head .fixed-container{
+    position: fixed;
+    width: 100%;
+    background: var(--primary-color);
+    top: 0px;
+}
+
+.navbar{
+    margin: auto;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dark{
+    width: 25px;
+    cursor: pointer;
+    margin-top: -2px;
+    background: #848484;
+    border-radius: 50%;
+}
+.logo{
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-left: 50px;
+}
+.span{
+    color:red;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.navbar ul li{
+    padding: 0px 20px;
+    list-style: none;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: lighter;
+    transition: 0.3s;
+
+}
+.navbar ul li a:hover{
+    bottom: 2px solid rgb(80, 70, 38);
+    border-radius: 2px;
+    color: red;
+    border-bottom: 1px solid var(--secondary-color);
+
+}
+
+.ham{
+    display: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+.mobile{
+        position: fixed;
+        top: 68px;
+        width: 50%;
+        left: -55%;
+        height: 100vh;
+        z-index: 2;
+        background: var(--primary-color) ;
+}
+
+.ham-mobile{
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.ham-mobile .mobile-link{
+    margin-top: 22px;
+    padding: 5px 0px;
+    width: 100%;
+}
+.ham-mobile .mobile-link:hover{
+    transition: 0.3s;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.ham-mobile .mobile-link a{
+    font-size: 1.2rem;
+    padding: 5px 27px;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+
+.banner{
+    margin-top: 9%;
+    margin-left:8% ;
+    margin-right:5% ;
+    margin-bottom: 11%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.banner .info .size{
+    font-size: 1.9rem;
+}
+.info{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.info h1{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.info-images{
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-right: 60px;
+}
+.info .info-span{
+    color: #ff4321;
+}
+.info-images img{
+    border-radius: 50%;
+    background: red;
+
+}
+.info p{
+    color: var(--secondary-color);
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.info .btn{
+    background: var(--secondary-color);
+    border-style: none;
+    padding: 12px 20px;
+    color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.banner .icons img{
+    width: 38px;
+    margin: 10px;
+    border-radius: 50%;
+    background: var(--primary-color);
+
+
+}
+.banner .icons img:hover{
+    border-radius: 1px solid red;
+}
+/* section aboutme */
+section{
+    padding: 6% 3%;
+}
+.about-heading{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+.about-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 7% 8%;
+}
+.about-box .content{
+    width: 50%;
+    padding: 20px 5%;
+}
+.about-box .skills{
+    width: 50%;
+    padding: 20px 5%;
+}
+.about-box .content h2{
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+
+}
+.about-box .skills h2{
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+
+
+}
+.about-box .content p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+
+    
+}
+.about-box .skills .know{
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 5px 15px;
+    color: var(--secondary-color);
+    background: rgb(119, 119, 119);
+    display: inline-block;
+    margin: 10px 5px;
+    color: var(--primary-color);
+    font-weight: bolder;
+    border-radius: 3px;
+    
+
+}
+.about-box .btn{
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+
+}
+#projects .proj-heading{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+
+#projects .project-container {
+    padding: 6% 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+#projects .project-container .project-box{
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    margin: 5px;
+    background: var(--secondary-color);
+    
+    
+}
+
+#projects .project-container .project-box .p-i{
+    background: var(--secondary-color);
+    border-radius: 10px;
+    margin-top: -3px;
+    width: 300px;
+    height: 150px;
+
+}
+#projects .project-container .project-box img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#projects .project-container .project-box h2{
+    color: var(--primary-color);
+    padding: 5px ;
+    
+}
+#projects .project-container .project-box p{
+    color: var(--primary-color);
+    padding: 6px;
+    margin-bottom: 5px;
+
+}
+#projects .project-container .project-box .project-view{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+#projects .project-container .project-box a{
+    color: var(--secondary-color);
+    border: 1px solid red;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: var(--primary-color);
+
+}
+
+.contact-heading{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+
+}
+.contact form{
+    margin: 8%;
+}
+.name-email{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.name-email .inp-form{
+    width: 50%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-style: none;
+    border:2px solid  rgb(138, 138, 138);
+    
+}
+.contact .form .email-form{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-style: none;
+    border: 2px solid rgb(138, 138, 138);
+}
+.contact .form .message-form{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border-radius: 5px;
+    border-style: none;
+    border: 2px solid rgb(138, 138, 138);
+
+
+}
+.contact .contact-submit{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    padding: 5px 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .footer-links img{
+    width: 30px;
+    margin: 0px 5px;
+    border-radius: 50%;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+footer h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+
+}
+
+
+
+
+@media (max-width:1200px) {
+
+
+    .logo{
+       font-size: 1.9rem;
+
+    }
+    .info h1 {
+        font-size: 2.2rem;
+    }
+ 
+    .navbar ul li a{
+        font-size: 1rem;
+
+    }
+    .info-images img{
+        width: 90%;
+        
+    }
+    .info-images{
+       
+        margin-right: 0px;
+    }
+
+
+
+
+    
+}
+@media (max-width:1000px) {
+ 
+    .info-images img{
+        width: 90%;
+        height: 73%;
+        margin-top: 60px;
+        
+    }
+    .info-images {
+        display: flex;
+        justify-content: end;
+    }
+
+}
+@media (max-width:800px) {
+
+    .logo{
+        margin: 5px -15px;
+    }
+    .ham{
+        display: block;
+    }
+    .site-menu{
+        display: none;
+    }
+    .info-images{
+        margin-top: 10px;
+    }
+    .mobile-link{
+        padding: 10px;
+    }
+    .info-images img{
+        width: 90%;
+        margin-top: 50px;
+        
+    }
+    
+
+    .active{
+        display: block;
+        left: 0%;
+    }
+
+
+}
+@media (max-width:768px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .info{
+        margin-left: 0px;
+    }
+    .info h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .info p{
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .info-images{
+        justify-content: center;
+        margin-top: -5px;
+    }
+    .info-images img{
+        width: 60%;
+    }
+    .about-box .skills .know {
+        font-size: 1.1rem;
+    }
+    .about-box .content{
+        width: 60%;
+        padding: 20px 2%;
+    }
+    .about-box .skills{
+        width: 40%;
+    }
+    .about-heading{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .proj-heading{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    #projects .project-container{
+        flex-direction: column;   
+        align-items: center;
+       
+       }
+
+
+
+}
+@media (max-width:500px) {
+    .about-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-box .content {
+        width: 100%;
+        padding: 20px 0%;
+    }
+    .about-box .skills {
+        width: 100%;
+        padding: 20px 0%;
+    }
+    #projects .proj-heading{
+        font-size: 1.5rem;
+    }
+    #about .about-heading{
+        font-size: 1.5rem;
+    }
+    #contact .contact-heading{
+        font-size: 1.5rem;
+    }
+    footer .footer-links img{
+        width: 20px;
+    }
+
+
+    
+}
+
