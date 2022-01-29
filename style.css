@@ -286,13 +286,11 @@ section{
 #projects .project-container .project-box .p-i{
     background: var(--secondary-color);
     border-radius: 10px;
-    margin-top: -3px;
-    width: 300px;
-    height: 150px;
+    width: 280px;
 
 }
 #projects .project-container .project-box img{
-    height: 250px;
+    height: 200px;
     border-radius: 10px;
     overflow: hidden;
     margin: 10px 0px;
@@ -300,15 +298,13 @@ section{
 
 #projects .project-container .project-box h2{
     color: var(--primary-color);
-    padding: 5px ;
-    margin-left:3px;
+    padding: 7px;
     
 }
 #projects .project-container .project-box p{
     color: var(--primary-color);
-    padding: 6px;
-    margin-bottom: 5px;
-    margin-left:3px;
+    padding: 7px 0px;
+    margin-bottom: 10px;
 
 }
 #projects .project-container .project-box .project-view{
