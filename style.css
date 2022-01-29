@@ -302,12 +302,14 @@ section{
 #projects .project-container .project-box h2{
     color: var(--primary-color);
     padding: 5px ;
+    margin-left:3px;
     
 }
 #projects .project-container .project-box p{
     color: var(--primary-color);
     padding: 6px;
     margin-bottom: 5px;
+    margin-left:3px;
 
 }
 #projects .project-container .project-box .project-view{
